@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -30,6 +31,8 @@ nav ul li{
     margin:2vh 5vw 1vh 0vw;
     /* top right bottom left */
     padding-bottom: 2%;
+
+    
 }
 
 nav ul li a{
@@ -60,12 +63,13 @@ nav ul li a:hover::after{
     width: 100vw;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1); 
     background-color: rgba(237, 234, 234, 0.904);
-    z-index: 100;
+    z-index: 1;
+    
 }
 
 .home{
     background-color: cornsilk;
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 0%;
     
 }
@@ -82,11 +86,11 @@ nav ul li a:hover::after{
     justify-content: space-around;
     flex-wrap: wrap;
     padding-top:5%;
-    height: 100vh;
+    height: fit-content;
 }
 #label{
     position: relative;
-    top: 10%;
+    top: 10vh;
     font-size: 23px;
     font-family: monospace;
 }
@@ -121,23 +125,27 @@ nav ul li a:hover::after{
 
 #introdesign{
     width: 50%;
-    height:60%;
+    height:fit-content;
     background-color: rgba(234, 225, 225, 0.92);
     position: absolute;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     top: 20%;
     right: 5%;
     border: 0.1;
     border-radius: 20px;
     box-shadow: 2px 1px 2px;
     z-index: 0;
+    object-fit: contain;
     /* mix-blend-mode: screen; */
 }
 #intropara{
-    font-size: 25px;
+    font-size: 24px;
     margin: 20px 20px 20px 20px;
     line-height: 150%;
+    width: 100%;
+    text-align: center;
+    padding-right: 5%;
 }
 .connect{
     display: flex;
